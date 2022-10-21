@@ -1,4 +1,4 @@
-# &emsp; &emsp; &emsp; &emsp; &emsp;魔导绪论(Introduction to Magic)
+<center>魔导绪论(Introduction to Magic)</center>
 ## 简介
 魔导绪论是由魔法少女TeRiRi依据蓝星大魔导师的魔法书籍并加以自己的理解编写而成，其中包含大部分的基础魔法和部分进阶魔法，旨在帮助魔导学徒快速入门。
 ## 主要内容
