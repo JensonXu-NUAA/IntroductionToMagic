@@ -28,10 +28,6 @@ for layer in net:
     print(layer.__class__.__name__,'output shape: \t',X.shape)
 '''
 
-# 读取数据
-batch_size = 256
-train_iter, test_iter = d2l.load_data_fashion_mnist(batch_size=batch_size)
-
 # 训练
 def evaluate_accuracy_gpu(net, data_iter, device=None):
     # 使⽤GPU计算模型在数据集上的精度
@@ -96,6 +92,10 @@ def train(net, train_iter, test_iter, num_epochs, lr, device):
 
     print(f'loss {train_l:.3f}, train acc {train_acc:.3f}, 'f'test acc {test_acc:.3f}')
     print(f'{metric[2] * num_epochs / timer.sum():.1f} examples/sec 'f'on {str(device)}')
+
+# 读取数据
+batch_size = 256
+train_iter, test_iter = d2l.load_data_fashion_mnist(batch_size=batch_size)
 
 # 训练和评估LeNet-5模型
 lr, num_epochs = 0.9, 10
